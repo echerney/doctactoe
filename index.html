@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <h1 class="header">play tic-tac-toe</h1>
+  <h2 class="player">Player starts the game!</h2>
+  <table>
+    <tbody>
+      <tr>
+        <td id="one" class="unmarked row1 col1 dia1"></td>
+        <td id="two" class="unmarked row1 col2"></td>
+        <td id="three" class="unmarked row1 col3 dia2"></td>
+      </tr>
+      <tr>
+        <td id="four" class="unmarked row2 col1"></td>
+        <td id="five" class="unmarked row2 col2 dia1 dia2"></td>
+        <td id="six" class="unmarked row2 col3"></td>
+      </tr>
+      <tr>
+        <td id="seven" class="unmarked row3 col1 dia2"></td>
+        <td id="eight" class="unmarked row3 col2"></td>
+        <td id="nine" class="unmarked row3 col3 dia1"></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>SCORE:</h2>
+  <h3 class="score oneplayer">Player One: <span id="onescore">0</span></h3>
+  <h3 class="score twoplayer">Player Two: <span id="twoscore">0</span></h3>
+
+  <button id="reset">Reset Game</button>
+  <div class="start-modal">
+    <div id="start-modal-content">
+      <div class="step1">
+        <p>This is the first modal</p>
+        <button id="lets-go">Let's go!</button>
+      </div>
+      <div class="step2">
+        <p id="start-modal-text">Player 1, choose your doctor</p>
+        <div class="doc" id="first"></div>
+        <div class="doc" id="second"></div>
+        <div class="doc" id="third"></div>
+        <div class="doc" id="fourth"></div>
+        <div class="doc" id="fifth"></div>
+        <div class="doc" id="sixth"></div>
+        <div class="doc" id="seventh"></div>
+        <div class="doc" id="eighth"></div>
+        <div class="doc" id="ninth"></div>
+        <div class="doc" id="tenth"></div>
+        <div class="doc" id="eleventh"></div>
+        <div class="doc" id="twelfth"></div>
+      </div>
+    </div>
+  </div>
+  <div class="end-modal">
+    <div id="end-modal-content">
+      <p id="announce-win">Color wins the game!</p>
+      <button id="end-close">Play again</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

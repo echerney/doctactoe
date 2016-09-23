@@ -1,0 +1,146 @@
+body {
+  text-align: center;
+  background-color: floralwhite;
+}
+
+table {
+  margin: 0 auto;
+}
+tr {
+  background-color: blanchedalmond;
+}
+
+td {
+  height: 175px;
+  width: 175px;
+  border-radius: 8%;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.p2 {
+  background-color: darkslateblue;
+}
+
+.p1 {
+  background-color: mediumvioletred;
+}
+
+button {
+  margin: 25px;
+  font-size: 15px;
+  background-color: cadetblue;
+  color: white;
+  border-radius: 5%;
+}
+
+/* Start Modal*/
+.start-modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#start-modal-content {
+    background-color: lavender;
+    margin: 5% auto;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+}
+
+.unmarked {
+  background-image: none;
+}
+
+.doc {
+  height: 150px;
+  width: 150px;
+  border-radius: 8%;
+  display: inline-table;
+  position: relative;
+}
+
+.picked {
+  height: 150px;
+  width: 150px;
+  border-radius: 8%;
+  display: inline-table;
+  position: relative;
+  opacity: .5;
+}
+
+#first{
+  background-image:url("../imgs/first.jpg");
+}
+#second{
+  background-image:url("../imgs/second.jpg");
+}
+#third{
+  background-image:url("../imgs/third.jpg");
+}
+#fourth{
+  background-image:url("../imgs/fourth.jpg");
+}
+#fifth{
+  background-image:url("../imgs/fifth.jpg");
+}
+#sixth{
+  background-image:url("../imgs/sixth.jpg");
+}
+#seventh{
+  background-image:url("../imgs/seventh.jpg");
+}
+#eighth{
+  background-image:url("../imgs/eighth.jpg");
+}
+#ninth{
+  background-image:url("../imgs/ninth.jpg");
+}
+#tenth{
+  background-image:url("../imgs/tenth.jpg");
+}
+#eleventh{
+  background-image:url("../imgs/eleventh.jpg");
+}
+#twelfth{
+  background-image:url("../imgs/twelfth.jpg");
+}
+
+.step2 {
+  display: none;
+}
+
+.step3 {
+  display: none;
+}
+
+/* End of the round Modal*/
+.end-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#end-modal-content {
+    background-color: lavender;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
