@@ -13,14 +13,17 @@ let twoWin = [];
 let pOne = "";
 let pTwo = "";
 
+//Allows the users to choose which doctors they want to be
 function startPicking(){
   $('.step1').fadeOut()
   setTimeout(function(){ $('.step2').fadeIn() }, 500)
   setPlayerListeners()
+
 }
 
 function setPlayerListeners(){
   $('.doc').click(chooseFirstDoc)
+
 }
 
 function chooseFirstDoc(){
@@ -28,10 +31,11 @@ function chooseFirstDoc(){
   pOne = $(this).css('background-image');
   console.log(pOne);
   $('#start-modal-text').text("Player 2, choose your doctor");
-  pickForTwo()
+  $('.doc').off('click')
+  $('.doc').click(chooseSecondDoc);
 }
 
-function pickForTwo(){
+function chooseSecondDoc(){
   $(this).removeClass('doc').addClass('picked');
   pTwo = $(this).css('background-image');
   console.log(pTwo);
@@ -51,13 +55,13 @@ function countTurns() {
 function setColor(){
   if (move % 2 === 0) {
     if($(this).hasClass("unmarked") === true){
-      $(this).addClass("p2").removeClass("unmarked").css('background-image', pTwo);
+      $(this).addClass("p1").removeClass("unmarked").css('background-image', pOne);
       countTurns()
       checkForWin()
     }
   } else {
     if($(this).hasClass("unmarked") === true){
-      $(this).addClass("p1").removeClass("unmarked").css('background-image', pOne);
+      $(this).addClass("p2").removeClass("unmarked").css('background-image', pTwo);
       countTurns()
       checkForWin()
     }
@@ -109,10 +113,10 @@ function fixScore(){
 
 function resetBoard(){
   $('.p1').each(function(){
-    $(this).removeClass('p1').addClass("unmarked")
+    $(this).removeClass('p1').addClass("unmarked").css('background-image', '')
   });
   $('.p2').each(function(){
-    $(this).removeClass('p2').addClass("unmarked")
+    $(this).removeClass('p2').addClass("unmarked").css('background-image', '')
   })
   $('.player').text("Winner starts the round!")
 }
