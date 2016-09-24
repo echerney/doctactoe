@@ -1,14 +1,14 @@
 body {
   text-align: center;
-  background-color: floralwhite;
-  font-family: 'Alfa Slab One', cursive;
+  background-color: lightcyan;
+  font-family: 'Fredoka One', cursive;
 }
 
 table {
   margin: 0 auto;
 }
 tr {
-  background-color: blanchedalmond;
+  background-color: lightblue;
 }
 
 td {
@@ -22,21 +22,16 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-}
-
-.p2 {
-  background-color: darkslateblue;
-}
-
-.p1 {
-  background-color: mediumvioletred;
+  font-size: 30px;
 }
 
 button {
+  font-family: 'Fredoka One', cursive;
+  height: 50px;
+  width: 140px;
   margin: 25px;
-  font-size: 15px;
-  background-color: cadetblue;
+  font-size: 18px;
+  background-color: midnightblue;
   color: white;
   border-radius: 5%;
 }
@@ -53,15 +48,12 @@ button {
 }
 
 #start-modal-content {
-    background-color: lavender;
+  border-radius: 5%;
+    background-color: lightcyan;
     margin: 5% auto;
     border: 1px solid #888;
     width: 80%;
     height: 80%;
-}
-
-.unmarked {
-  background-image: none;
 }
 
 .doc {
@@ -128,20 +120,21 @@ button {
 
 /* End of the round Modal*/
 .end-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
 }
 
 #end-modal-content {
-    background-color: lavender;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+  border-radius: 5%;
+  background-color: lightcyan;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
