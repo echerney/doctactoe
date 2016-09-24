@@ -33,7 +33,7 @@ button {
   font-size: 18px;
   background-color: midnightblue;
   color: white;
-  border-radius: 5%;
+  border-radius: 8%;
 }
 
 /* Start Modal*/
@@ -49,11 +49,11 @@ button {
 
 #start-modal-content {
   border-radius: 5%;
-    background-color: lightcyan;
-    margin: 5% auto;
-    border: 1px solid #888;
-    width: 80%;
-    height: 80%;
+  background-color: lightcyan;
+  margin: 5% auto;
+  border: 1px solid #888;
+  width: 80%;
+  height: 90%;
 }
 
 .doc {
@@ -131,7 +131,6 @@ button {
 }
 
 #end-modal-content {
-  border-radius: 5%;
   background-color: lightcyan;
   margin: 15% auto;
   padding: 20px;
